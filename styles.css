@@ -1,0 +1,62 @@
+.tic-tac-toe-container {
+  clear: both;
+  content: "";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: table; */
+  margin: 100px auto;
+}
+.tic-tac-toe-container .row {
+  display: flex;
+}
+
+.tic-tac-toe-container .square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2em;
+  border: 1px solid #6f6e6e;
+  cursor: pointer;
+  user-select: none;
+
+  text-align: center;
+}
+
+/* Add a margin between rows */
+.tic-tac-toe-container .row:not(:last-child) {
+  margin-bottom: -1px; /* Adjust to align borders neatly */
+}
+
+/* Add a margin between squares */
+.tic-tac-toe-container .square:not(:last-child) {
+  margin-right: -1px; /* Adjust to align borders neatly */
+}
+
+/* Styling for game status */
+.gameStatus {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f38508;
+}
+
+/* Styling for restart button */
+.tic-tac-toe-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #4c92dd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tic-tac-toe-container button:hover {
+  background-color: #0056b3;
+}
